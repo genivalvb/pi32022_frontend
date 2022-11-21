@@ -58,7 +58,7 @@
             },
             "development": {
               "buildOptimizer": false,
-              "aot": true,
+              "aot": false,
               "optimization": false,
               "vendorChunk": true,
               "extractLicenses": false,
