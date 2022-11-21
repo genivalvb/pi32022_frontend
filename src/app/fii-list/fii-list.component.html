@@ -1,0 +1,26 @@
+<h2>Lista de Fiis</h2>
+<table class= "table table-striped">
+  <thead>
+    <tr>
+      <th>Data Registro:</th>
+      <th>Renda:</th>
+      <th>Valor Investido:</th>
+      <th>Name:</th>
+
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let fii of fiis">
+      <td> {{ fii.data_registro }}</td>
+      <td> {{ fii.renda }}</td>
+      <td> {{ fii.valor_investido }}</td>
+      <td> {{ fii.name }}</td>
+
+
+      <td>
+        <button (click) = "fiiDetails(fii.id)" class="btn btn-info" stye="margin-left: 10px">Details</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
